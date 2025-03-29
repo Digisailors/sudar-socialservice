@@ -10,10 +10,10 @@
 <meta name="author" content="ThemeMascot" />
 
 <!-- Page Title -->
-<title>Ngopress - Nonprofit, Crowdfunding & Charity HTML5 Template</title>
+<title>Sudar Service Trust</title>
 
 <!-- Favicon and Touch Icons -->
-<link href="images/sudarlogo.png" rel="shortcut icon" type="image/png">
+<link href="images/sudarlogowhite.png" rel="shortcut icon" type="image/png">
 <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
 <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
 <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
@@ -132,7 +132,7 @@
           </div>
           <div class="col-xl-auto ms-xl-auto header-top-right align-self-center text-center text-xl-end">
             <div class="element pt-0 pt-lg-10 pb-0">
-              <a href="volunteer1.html" class="btn btn-theme-colored1 btn-flat btn-sm ajaxload-popup">Join Us</a>
+              <a href="volunteer1.html" class="btn btn-theme-colored1 btn-flat btn-sm">Join Us</a>
             </div>
           </div>
         </div>
@@ -203,7 +203,7 @@
   <!-- Start main-content -->
   <div class="main-content-area">
     <!-- Section: page title -->
-    <section class="page-title layer-overlay overlay-dark-9 section-typo-light bg-img-center" data-tm-bg-img="images/bg/bg1.jpg">
+    <section class="page-title layer-overlay overlay-dark-9 section-typo-light bg-img-center" data-tm-bg-img="images/bg/aboutImg.jpg">
       <div class="container pt-50 pb-50">
         <div class="section-content">
           <div class="row">
@@ -246,8 +246,8 @@
                   </div>
                   <div class="icon-text">
                     <h5 class="icon-box-title mt-0">Phone</h5>
-                    <div class="content"><a href="tel:+919488765326">+91 9488765326</a></div>
-                    <div class="content"><a href="tel:+916382783916">+91 6382783916</a></div>
+                    <div class="content"><a href="tel:+919488765326">+91 9488765326</a> <a href="tel:+916382783916">+91 6382783916</a></div>
+                    <!-- <div class="content"><a href="tel:+916382783916">+91 6382783916</a></div> -->
                     <div class="content"><a href="tel:+910461405221">0461 405221</a></div>
                   </div>
                   <div class="clearfix"></div>
@@ -289,14 +289,14 @@
     </section>
 
     <!-- Divider: Contact -->
-    <section class="divider">
+    <section class="divider" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-7">
-            <h2 class="mt-0 mb-0">Interested in discussing?</h2>
-            <p class="font-size-20">Active & Ready to use Contact Form!</p>
+            <h2 class="mt-0 mb-0">Have questions or want to support our cause? </h2>
+            <p class="font-size-20">We'd love to hear from you!</p>
             <!-- Contact Form -->
-            <form id="contact_form" name="contact_form" class="" action="https://html.kodesolution.com/2016/ngopress-html-b5/includes/sendmail.php" method="post">
+            <form id="contact_form" name="contact_form" class="" action="https://formsubmit.co/sudarsocialservices@gmail.com" method="POST">
               <div class="row">
                 <div class="col-sm-6">
                   <div class="mb-3">
@@ -335,10 +335,65 @@
                 <button type="submit" class="btn btn-flat btn-theme-colored1 text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px" data-loading-text="Please wait...">Send your message</button>
                 <button type="reset" class="btn btn-flat btn-theme-colored3 text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px">Reset</button>
               </div>
+                  <input type="hidden" name="_next" value="http://127.0.0.1:5500/public/contact-us.html#contact">
+                  <input type="hidden" name="_subject" value="New Contact form Submitted!">
+                  <input type="hidden" name="_autoresponse" value="We have received your response!!!">
+                  <input type="hidden" name="_template" value="table">
             </form>
+            <!-- Contact Form Validation-->  
+            <!-- <div id="popup" class="popup">Your message has been sent successfully!</div> -->
+            <!-- <style>
+              /* Popup Styling */
+              .popup {
+                  display: none;
+                  position: fixed;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  background: #4CAF50;
+                  color: white;
+                  padding: 15px 20px;
+                  border-radius: 5px;
+                  text-align: center;
+                  font-size: 16px;
+                  z-index: 1000;
+              }
+          </style> -->
+      
 
-            <!-- Contact Form Validation-->
-            <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+            <!-- <script>
+                document.getElementById("contactForm").addEventListener("submit", function(event) {
+                    event.preventDefault(); // Prevent form from submitting normally
+                    
+                    let form = this;
+                    let popup = document.getElementById("popup");
+        
+                    // Send form data using Fetch API
+                    fetch(form.action, {
+                        method: form.method,
+                        body: new FormData(form),
+                        headers: { 'Accept': 'application/json' }
+                    }).then(response => {
+                        if (response.ok) {
+                            // Show popup message
+                            popup.style.display = "block";
+        
+                            // Hide popup after 3 seconds
+                            setTimeout(() => {
+                                popup.style.display = "none";
+                            }, 3000);
+        
+                            // Reset the form
+                            form.reset();
+                        } else {
+                            alert("Oops! Something went wrong.");
+                        }
+                    }).catch(error => {
+                        alert("Oops! There was a problem submitting your form.");
+                    });
+                });
+            </script> -->
+            <!-- <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
               (function($) {
                 $("#contact_form").validate({
                   submitHandler: function(form) {
@@ -362,7 +417,7 @@
                   }
                 });
               })(jQuery);
-            </script>
+            </script> -->
           </div>
           <div class="col-lg-5">
             <!-- <iframe src= width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
@@ -388,8 +443,9 @@
               <ul class="mb-30">
                 <li class="contact-phone">
                   <div class="icon"><i class="flaticon-contact-042-phone-1"></i></div>
-                  <div class="text"><a href="tel:+919080504509">+91 9488765326</a></div>
-                  <div class="text"><a href="tel:+916382783916">+91 6382783916</a></div>
+                  <div class="text"><a href="tel:+919080504509">+91 9488765326</a><br><a href="tel:+916382783916">+91 6382783916</a><br><a href="tel:0461405221">Office - 0461 405221</a></div>
+                  <!-- <div class="text"><a href="tel:+916382783916">+91 6382783916</a></div>
+                  <div class="text"><a href="tel:0461405221">Office - 0461 405221</a></div> -->
                 </li>
                 <li class="contact-email">
                   <div class="icon"><i class="flaticon-contact-043-email-1"></i></div>
@@ -480,20 +536,20 @@
               </script>
             </div>
           </div>
-          <div class="col-sm-6 col-md-3 col-lg-3">
+          <!-- <div class="col-sm-6 col-md-3 col-lg-3">
             <div class="widget text-center text-xl-start">
               <h5 class="widget-title mb-10">Call Us Now</h5>
               <div class="text-gray">
                 <a href="tel:0461405221">Tel: 0461 405221</a>
               </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-4">
+          </div> -->
+          <div class="col-sm-6 col-md-4 col-lg-4" style="width: 42%; display: flex; justify-content: flex-end;">
             <div class="widget text-center text-xl-start">
               <h5 class="widget-title mb-10">Connect With Us</h5>
               <ul class="styled-icons icon-dark icon-theme-colored1 icon-rounded clearfix">
-                <li><a class="social-link" href="index-home-variation-appointment-form-style3.html#" ><i class="fab fa-facebook-f"></i></a></li>
-                <li><a class="social-link" href="index-home-variation-appointment-form-style3.html#" ><i class="fab fa-instagram"></i></a></li>
+                <li><a class="social-link" target="_blank" href="https://www.facebook.com/share/19Qbid7kRH/" ><i class="fab fa-facebook-f"></i></a></li>
+                <li><a class="social-link" target="_blank" href="https://www.instagram.com/sudar_social_services?igsh=MXN6dG42NXM0aDQyMA==" ><i class="fab fa-instagram"></i></a></li>
                 <!-- <li><a class="social-link" href="index-home-variation-appointment-form-style3.html#" ><i class="fab fa-youtube-square"></i></a></li> -->
                 <!-- <li><a class="social-link" href="index-home-variation-appointment-form-style3.html#" ><i class="fab fa-twitter"></i></a></li>
                 <li><a class="social-link" href="index-home-variation-appointment-form-style3.html#" ><i class="fab fa-skype"></i></a></li>
@@ -534,6 +590,7 @@
 <!-- Footer Scripts -->
 <!-- JS | Custom script for all pages -->
 <script src="js/custom.js"></script>
+
 
 </body>
 </html>
