@@ -543,10 +543,10 @@ progress {
   margin-right: auto;
   margin-left: auto;
 }
-@media (min-width: 576px) {
+@media (min-width: 300px) {
   .container,
   .container-sm {
-    max-width: 540px;
+    max-width: 90%;
   }
 }
 @media (min-width: 768px) {

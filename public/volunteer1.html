@@ -10,10 +10,10 @@
 <meta name="author" content="ThemeMascot" />
 
 <!-- Page Title -->
-<title>Ngopress - Nonprofit, Crowdfunding & Charity HTML5 Template</title>
+<title>Sudar Service Trust</title>
 
 <!-- Favicon and Touch Icons -->
-<link href="images/sudarlogo.png" rel="shortcut icon" type="image/png">
+<link href="images/sudarlogowhite.png" rel="shortcut icon" type="image/png">
 <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
 <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
 <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
@@ -132,7 +132,7 @@
           </div>
           <div class="col-xl-auto ms-xl-auto header-top-right align-self-center text-center text-xl-end">
             <div class="element pt-0 pt-lg-10 pb-0">
-              <a href="volunteer1.html" class="btn btn-theme-colored1 btn-flat btn-sm ajaxload-popup">Join Us</a>
+              <a href="volunteer1.html" class="btn btn-theme-colored1 btn-flat btn-sm">Join Us</a>
             </div>
           </div>
         </div>
@@ -203,22 +203,22 @@
   <!-- Start main-content -->
   <div class="main-content-area">
     <!-- Section: Home -->
-    <section class="parallax layer-overlay overlay-dark-8" data-tm-bg-img="images/shop/portfolio-big1.jpg">
+    <section id="volunteer" class="parallax layer-overlay overlay-dark-8" data-tm-bg-img="images/bg/volunteer-1.jpg">
       <div class="container">
         <div class="section-content">
           <div class="row">
             <div class="col-md-6 section-typo-light">
-              <h1 class="font-size-64 text-white">Best Multipurpose <span class="text-theme-colored1">Template</span></h1>
-              <h5 class="text-white mb-20">Every day we bring hope to millions of children in the world's hardest places as a sign of God's unconditional love.</h5>
+              <h1 class="font-size-64 text-white">Join Us as a <span class="text-theme-colored1">Volunteer</span></h1>
+              <h5 class="text-white mb-20" style="text-align: justify;">Every day we bring hope to Thousand's of children in the India's hardest places as a sign of God's unconditional love. Be a part of Sudar Social Services and make a difference! As a volunteer, you can help educate, support, and uplift underprivileged children. Your time and effort can bring hope and change to their lives.</h5>
               <div class="tm-sc-unordered-list mb-20">
                 <ul>
-                  <li>We Use Quality Materials</li>
-                  <li>We’re Professional Contractors</li>
-                  <li>The Most Trusted Company</li>
+                  <li>Make a positive impact</li>
+                  <li>Support those in need</li>
+                  <li>Be part of a caring community</li>
                 </ul>
               </div>
-              <a class="btn btn-theme-colored1 btn-round mr-20" href="index-home-variation-appointment-form-style3.html#">Read More</a>
-              <div class="box-hover-effect tm-sc-video-popup tm-sc-video-popup-button-with-text-right">
+              <a class="btn btn-theme-colored1 btn-round mr-20" href="donate.html">Donate Now</a>
+              <!-- <div class="box-hover-effect tm-sc-video-popup tm-sc-video-popup-button-with-text-right">
                 <div class="effect-wrapper d-flex align-items-center">
                   <div class="video-button-text mr-1">Take Quick Tour</div>
                   <div class="thumb">
@@ -226,7 +226,7 @@
                   </div>
                   <a class="hover-link" data-lightbox-gallery="youtube-video" href="https://www.youtube.com/watch?v=xcJtL7QggTI" title=""></a>
                 </div>
-              </div>
+              </div> -->
             </div>
             <div class="col-md-2">
             </div>
@@ -234,44 +234,48 @@
               <div class="p-30 bg-white">
                 <h4 class="">Make an Appointment</h4>
                 <!-- Contact Form -->
-                <form id="contact_form" name="contact_form" class="" action="https://html.kodesolution.com/2016/ngopress-html-b5/includes/sendmail.php" method="post">
+                <form id="contact_form" name="contact_form" class="" action="https://formsubmit.co/sudarsocialservices@gmail.com" method="post">
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="mb-3">
-                        <input name="form_name" class="form-control" type="text" placeholder="Enter Name">
+                        <input name="Person_name" class="form-control" type="text" placeholder="Enter Name">
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="mb-3">
-                        <input name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
+                        <input name="email" class="form-control required email" type="email" placeholder="Enter Email">
                       </div>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="mb-3">
-                        <input name="form_subject" class="form-control required" type="text" placeholder="Enter Subject">
+                        <input name="subject" class="form-control required" type="text" placeholder="Enter Subject">
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="mb-3">
-                        <input name="form_phone" class="form-control" type="text" placeholder="Enter Phone">
+                        <input name="phone" class="form-control" type="text" placeholder="Enter Phone">
                       </div>
                     </div>
                   </div>
 
                   <div class="mb-3">
-                    <textarea name="form_message" class="form-control required" rows="5" placeholder="Enter Message"></textarea>
+                    <textarea name="message" class="form-control required" rows="5" placeholder="Enter Message"></textarea>
                   </div>
                   <div class="mb-3">
                     <input name="form_botcheck" class="form-control" type="hidden" value="" />
                     <button type="submit" class="btn btn-theme-colored2 btn-round text-uppercase mb-sm-30 border-left-theme-color-2-4px" data-loading-text="Please wait...">Submit</button>
                     <button type="reset" class="btn btn-outline-warning btn-round text-uppercase mb-sm-30 border-left-theme-color-2-4px">Reset</button>
                   </div>
+                  <input type="hidden" name="_next" value="http://127.0.0.1:5500/public/volunteer1.html#volunteer">
+                  <input type="hidden" name="_subject" value="New Volunteer form Submitted!">
+                  <input type="hidden" name="_autoresponse" value="We have received your request to join our Service!!!">
+                  <input type="hidden" name="_template" value="table">
                 </form>
 
                 <!-- Contact Form Validation-->
-                <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+                <!-- <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
                   (function($) {
                     $("#contact_form").validate({
                       submitHandler: function(form) {
@@ -295,7 +299,7 @@
                       }
                     });
                   })(jQuery);
-                </script>
+                </script> -->
               </div>
             </div>
           </div>
@@ -308,22 +312,23 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+            <p>At Sudar Social Services, we believe that small acts of kindness can create a big impact. By becoming a volunteer, you have the opportunity to contribute to meaningful causes, support underprivileged communities, and bring positive change to society.</p>
             <div class="separator separator-rouned">
               <i class="fa fa-cog fa-spin"></i>
             </div>
             <div class="row">
-              <div class="col-xs-6 col-md-3"> <a href="index-home-variation-appointment-form-style3.html#"> <img alt="..." src="https://placehold.it/200x200" class="img-thumbnail"> </a> </div>
-              <div class="col-xs-6 col-md-3"> <a href="index-home-variation-appointment-form-style3.html#"> <img alt="..." src="https://placehold.it/200x200" class="img-thumbnail"> </a> </div>
-              <div class="col-xs-6 col-md-3"> <a href="index-home-variation-appointment-form-style3.html#"> <img alt="..." src="https://placehold.it/200x200" class="img-thumbnail"> </a> </div>
-              <div class="col-xs-6 col-md-3"> <a href="index-home-variation-appointment-form-style3.html#"> <img alt="..." src="https://placehold.it/200x200" class="img-thumbnail"> </a> </div>
+              <div class="col-xs-6 col-md-3"> <a href="volunteer1.html"> <img alt="..." src="./images/events/1.jpg" class="img-thumbnail"> </a> </div>
+              <div class="col-xs-6 col-md-3"> <a href="volunteer1.html"> <img alt="..." src="./images/events/1.jpg" class="img-thumbnail"> </a> </div>
+              <div class="col-xs-6 col-md-3"> <a href="volunteer1.html"> <img alt="..." src="./images/events/1.jpg" class="img-thumbnail"> </a> </div>
+              <div class="col-xs-6 col-md-3"> <a href="volunteer1.html"> <img alt="..." src="./images/events/1.jpg" class="img-thumbnail"> </a> </div>
             </div>
             <div class="separator separator-rouned">
               <i class="fa fa-cog"></i>
             </div>
-            <h5>Sub Heading</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+            <h5>Why Volunteer with Us?</h5>
+            <p style="text-align: justify;">
+              At Sudar Social Services, we believe that true change begins with people who care. Volunteering is more than just giving time; it’s about making a meaningful impact in the lives of those who need it the most. Whether it’s helping underprivileged children receive an education, supporting healthcare initiatives, assisting in community development programs, or simply spreading kindness, your contribution as a volunteer can create lasting change. By joining our team, you become part of a compassionate network of individuals dedicated to making the world a better place. Volunteering also offers an opportunity for personal growth—gaining new skills, meeting like-minded people, and experiencing the joy of selfless service. No matter your background, skills, or availability, there is a role for everyone. 
+              Whether you can spare a few hours a week or commit to long-term involvement, your efforts will make a real difference. Join us today and be a part of something bigger—together, we can bring hope, happiness, and change to countless lives. Become a volunteer and help us create a brighter future, one step at a time!</p>
           </div>
         </div>
       </div>
@@ -335,18 +340,19 @@
   <footer id="footer" class="footer" data-tm-bg-img="images/footer-bg.png">
     <div class="footer-widget-area">
       <div class="container pt-90 pb-40">
-        <div class="row">
+        <div class="row" style="display: flex; justify-content: space-between;">
           <div class="col-md-6 col-lg-6 col-xl-4">
             <div class="widget tm-widget-contact-info contact-info-style1 contact-icon-theme-colored1">
               <div class="thumb" style="width: 70px ;">
-                <img alt="Logo" src="images/sudarlogo.png">
+                <img alt="Logo" src="images/sudarlogowhite.png">
               </div>
               <div class="description"></div>
               <ul class="mb-30">
                 <li class="contact-phone">
                   <div class="icon"><i class="flaticon-contact-042-phone-1"></i></div>
-                  <div class="text"><a href="tel:+919080504509">+91 9488765326</a></div>
-                  <div class="text"><a href="tel:+916382783916">+91 6382783916</a></div>
+                  <div class="text"><a href="tel:+919080504509">+91 9488765326</a><br><a href="tel:+916382783916">+91 6382783916</a><br><a href="tel:0461405221">Office - 0461 405221</a></div>
+                  <!-- <div class="text"><a href="tel:+916382783916">+91 6382783916</a></div>
+                  <div class="text"><a href="tel:0461405221">Office - 0461 405221</a></div> -->
                 </li>
                 <li class="contact-email">
                   <div class="icon"><i class="flaticon-contact-043-email-1"></i></div>
@@ -359,7 +365,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-6 col-lg-6 col-xl-2">
+          <div class="col-md-6 col-lg-6 col-xl-4">
             <div class="widget widget_nav_menu">
               <h4 class="widget-title line-bottom">Useful Links</h4>
               <ul>
@@ -437,20 +443,20 @@
               </script>
             </div>
           </div>
-          <div class="col-sm-6 col-md-3 col-lg-3">
+          <!-- <div class="col-sm-6 col-md-3 col-lg-3">
             <div class="widget text-center text-xl-start">
               <h5 class="widget-title mb-10">Call Us Now</h5>
               <div class="text-gray">
                 <a href="tel:0461405221">Tel: 0461 405221</a>
               </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-4">
+          </div> -->
+          <div class="col-sm-6 col-md-4 col-lg-4" style="width: 42%; display: flex; justify-content: flex-end;">
             <div class="widget text-center text-xl-start">
               <h5 class="widget-title mb-10">Connect With Us</h5>
               <ul class="styled-icons icon-dark icon-theme-colored1 icon-rounded clearfix">
-                <li><a class="social-link" href="index-home-variation-appointment-form-style3.html#" ><i class="fab fa-facebook-f"></i></a></li>
-                <li><a class="social-link" href="index-home-variation-appointment-form-style3.html#" ><i class="fab fa-instagram"></i></a></li>
+                <li><a class="social-link" target="_blank" href="https://www.facebook.com/share/19Qbid7kRH/" ><i class="fab fa-facebook-f"></i></a></li>
+                <li><a class="social-link" target="_blank" href="https://www.instagram.com/sudar_social_services?igsh=MXN6dG42NXM0aDQyMA==" ><i class="fab fa-instagram"></i></a></li>
                 <!-- <li><a class="social-link" href="index-home-variation-appointment-form-style3.html#" ><i class="fab fa-youtube-square"></i></a></li> -->
                 <!-- <li><a class="social-link" href="index-home-variation-appointment-form-style3.html#" ><i class="fab fa-twitter"></i></a></li>
                 <li><a class="social-link" href="index-home-variation-appointment-form-style3.html#" ><i class="fab fa-skype"></i></a></li>
