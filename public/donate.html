@@ -123,7 +123,7 @@
           <div class="col-xl-auto header-top-left align-self-center text-center text-xl-start border-left-1px border-right-1px">
             <ul class="element contact-info">
               <li class="contact-phone"><i class="fa fa-phone font-icon text-theme-colored1 sm-display-block"></i><a href="tel:+9488765326">tel:+9488765326</a><a href="tel:+916382783916"> +916382783916</a></li>
-              <li class="contact-email"><i class="fa fa-envelope font-icon text-theme-colored1 sm-display-block"></i> <a href="mailto:sudarsocialservices@gmail.com">sudarsocialservices@gmail.com</a></li>
+              <li class="contact-email"><i class="fa fa-envelope font-icon text-theme-colored1 sm-display-block"></i> <a href="mailto:contact@sudarsocial.com">contact@sudarsocial.com</a></li>
               <li class="contact-address"><i class="fa fa-map font-icon text-theme-colored1 sm-display-block"></i><a href="https://maps.app.goo.gl/nqm2A71i22n6rjsE9" target="_blank">
                 1H/323, Paulpandi Nagar, Thoothukudi-628008.
               </a>
@@ -172,6 +172,7 @@
                         <li><a href="news-details.html">News Details</a></li>
                       </ul>
                     </li> -->
+                    <li class="menu-item"><a href="sponsor.html">Sponsors</a></li>
                     <li class="menu-item"><a href="blog.html">Blog</a>
                     <li class="menu-item"><a href="contact-us.html">Contact</a></li>
                   </ul>
@@ -242,40 +243,152 @@
             <hr>
 
 <!-- qr code start here -->
-              <img id="qrCode" class="qr-code" src="./images/pic/QRcode.png" alt="QR Code">
-              <button class="pay-button" onclick="toggleQRCode()">Pay Now</button>
-              <style>
-                .qr-code {
-                    display: none;
-                    width: 350px;
-                    height: auto;
-                    margin: 30px;
-                    margin-left: 100px;
-                    border: 1px solid #ccc;
-                    padding: 10px;
-                    background-color: #fff;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-                }
+              <!-- Pay Now Button -->
+<button id="payButton" class="gradient-button gradient-orange" onclick="toggleQRCode(true)">Pay Now</button>
+
+<!-- QR Code Popup -->
+<div id="qrPopup" class="popup">
+    <div class="popup-content">
+        <!-- Close Button (X) -->
+        <button class="close-button" onclick="toggleQRCode(false)">✖</button>
         
-                .pay-button {
-                    padding: 10px 20px;
-                    background-color: #948989;
-                    color: white;
-                    border: none;
-                    cursor: pointer;
-                    font-size: 16px;
-                }
-            </style>
-              <script>
-                function toggleQRCode() {
-                    var qrCode = document.getElementById("qrCode");
-                    if (qrCode.style.display === "none" || qrCode.style.display === "") {
-                        qrCode.style.display = "block";
-                    } else {
-                        qrCode.style.display = "none";
-                    }
-                }
-            </script>
+        <!-- QR Code Image -->
+        <img src="./images/pic/QRcode.png" alt="QR Code" class="qr-code">
+    </div>
+</div>
+
+<style>
+    /* General Button Styling */
+    .gradient-button {
+        padding: 12px 25px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Pay Now Button (Dark Orange to Yellow) */
+    .gradient-orange {
+        background: linear-gradient(45deg, #FF8C00, #FFD700);
+    }
+
+    .gradient-orange:hover {
+        background: linear-gradient(45deg, #FFD700, #FF8C00);
+        transform: scale(1.05);
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Popup Background */
+    .popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999; /* Ensures popup stays on top */
+        transition: opacity 1s ease-in-out;
+    }
+
+    /* Popup Content Box */
+    .popup-content {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        position: relative;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    /* Close Button (X) */
+    .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: linear-gradient(45deg, #ff0000, #ff6b6b);
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        transition: 0.5s ease-in-out;
+    }
+
+    /* Close Button Hover Effect */
+    .close-button:hover {
+        background: linear-gradient(45deg, #ff6b6b, #ff0000);
+        transform: scale(1.1);
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    /* QR Code Image */
+    .qr-code {
+        width: 300px;
+        height: auto;
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Prevent Background Scroll */
+    body.modal-open {
+        overflow: hidden;
+    }
+
+    /* Fade-in Animation */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: scale(0.9); }
+        to { opacity: 1; transform: scale(1); }
+    }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      var qrPopup = document.getElementById("qrPopup");
+      qrPopup.style.display = "none"; // Ensure popup is hidden on load
+      qrPopup.style.opacity = "0"; // Start with opacity 0
+  });
+
+  function toggleQRCode(show) {
+      var qrPopup = document.getElementById("qrPopup");
+      var body = document.body;
+
+      if (show) {
+          qrPopup.style.display = "flex"; // Show popup
+          setTimeout(() => {
+              qrPopup.style.opacity = "1"; // Fade-in effect
+          }, 10);
+          body.classList.add("modal-open"); // Prevent background scrolling
+      } else {
+          qrPopup.style.opacity = "0"; // Start fade-out effect
+          setTimeout(() => {
+              qrPopup.style.display = "none"; // Hide after fade-out
+          }, 300); // Wait for animation to complete
+          body.classList.remove("modal-open"); // Enable scrolling again
+      }
+  }
+</script>
+
+
+
 
             <!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
               <input type="hidden" name="cmd" value="_donations">
@@ -321,11 +434,11 @@
                 </li>
                 <li class="contact-email">
                   <div class="icon"><i class="flaticon-contact-043-email-1"></i></div>
-                  <div class="text"><a href="mailto:sudarsocialservices@gmail.com">sudarsocialservices@gmail.com</a></div>
+                  <div class="text"><a href="mailto:contact@sudarsocial.com">contact@sudarsocial.com</a></div>
                 </li>
                 <li class="contact-website">
                   <div class="icon"><i class="flaticon-contact-035-website"></i></div>
-                  <div class="text"><a target="_blank" href="http://yourdomain.com">www.yourdomain.com</a></div>
+                  <div class="text"><a target="_blank" href="http://sudarsocial.com">www.sudarsocial.com</a></div>
                 </li>
               </ul>
             </div>
